@@ -1,6 +1,5 @@
 const { Sequelize } = require('sequelize');
 
-// Ajusta estos valores según tu configuración de MySQL
 const sequelize = new Sequelize(
   'graficos',
    'root',
@@ -9,7 +8,6 @@ const sequelize = new Sequelize(
   host: 'localhost',
   port: 3306,
   dialect: 'mysql',
-  logging: false, // Cambia a true si quieres ver las consultas SQL en consola
 });
 
 (async () => {

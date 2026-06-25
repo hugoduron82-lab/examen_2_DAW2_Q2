@@ -10,7 +10,7 @@ const PORT = 5001;
 app.use(cors());
 app.use(express.json());
 
-// 🔹 Endpoint 1: Promedio de valor por categoría (Lineal)
+//Endpoint 1: Promedio de valor por categoría (Lineal)
 app.get('/promedio-por-categoria', async (req, res) => {
   try {
     const resultados = await Producto.findAll({
@@ -38,7 +38,7 @@ app.get('/promedio-por-categoria', async (req, res) => {
   }
 });
 
-// 🔹 Endpoint 2: Cantidad de productos por marca (Pie)
+//Endpoint 2: Cantidad de productos por marca (Pie)
 app.get('/cantidad-por-marca', async (req, res) => {
   try {
     const resultados = await Producto.findAll({
